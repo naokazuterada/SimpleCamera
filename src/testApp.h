@@ -21,9 +21,7 @@ class testApp : public ofBaseApp{
 	void windowResized(int w, int h);
 
 	ofVideoGrabber  vidGrabber;
-	ofxCvColorImage src_image;		// 取得用
-	ofxCvColorImage rotate_image;	// 表示用
-	ofxCvColorImage disp_image;	// 表示用
+	ofxCvColorImage src_image;
 	
 	static const int VIDEO_WIDTH = 640;
 	static const int VIDEO_HEIGHT = 480;

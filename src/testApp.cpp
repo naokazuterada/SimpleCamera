@@ -18,9 +18,6 @@ void testApp::setup()
 	vidGrabber.initGrabber(VIDEO_WIDTH, VIDEO_HEIGHT);
 	
 	src_image.allocate(VIDEO_WIDTH, VIDEO_HEIGHT);
-	rotate_image.allocate(VIDEO_HEIGHT, VIDEO_WIDTH);
-	
-	disp_image.allocate(VIDEO_HEIGHT, VIDEO_HEIGHT);
 }
 
 //--------------------------------------------------------------

@@ -275,7 +275,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>9</integer>
+									<integer>10</integer>
 									<integer>7</integer>
 									<integer>0</integer>
 								</array>
@@ -330,12 +330,12 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E70A711912DC93D400998928</string>
+										<string>E70A712212DC96FF00998928</string>
 										<key>history</key>
 										<array>
 											<string>E718D07C12DC7796003A2347</string>
-											<string>E70A70FB12DC91D000998928</string>
-											<string>E70A70FC12DC91D000998928</string>
+											<string>E70A712012DC96FF00998928</string>
+											<string>E70A712112DC96FF00998928</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -533,11 +533,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>E70A712312DC96FF00998928</string>
 		<string>E70A70E312DC8C7600998928</string>
 		<string>E70A70E412DC8C7600998928</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>E7D9537212DC6CBF00828EF4</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>E7D9537212DC6CBF00828EF4</string>
 		<string>/Users/terada/Documents/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/myApps/SimpleVideo/SimpleVideo.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -562,7 +563,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>testApp.cpp</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -579,6 +580,8 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -631,7 +634,7 @@
 			<key>WindowToolGUID</key>
 			<string>E7D9537212DC6CBF00828EF4</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
