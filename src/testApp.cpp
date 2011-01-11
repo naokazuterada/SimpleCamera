@@ -3,7 +3,7 @@
 //--------------------------------------------------------------
 void testApp::setup()
 {
-	ofSetFrameRate(60);
+	ofSetFrameRate(30);
 	ofEnableAlphaBlending();
 	ofEnableSmoothing();
 	
@@ -13,6 +13,7 @@ void testApp::setup()
 	mirror_horizontal	= false;
 	display_rotate		= false;
 	fullscreen			= false;
+	adjust_min			= false;
 	
 	vidGrabber.setVerbose(true);
 	vidGrabber.initGrabber(VIDEO_WIDTH, VIDEO_HEIGHT);
@@ -42,7 +43,10 @@ void testApp::draw()
 		// windowにあわせて拡大縮小
 		float x_scale = (float) ofGetWidth() / (float) VIDEO_HEIGHT;
 		float y_scale = (float) ofGetHeight() / (float) VIDEO_WIDTH;
-		float scale = min(x_scale, y_scale);
+		float scale;
+		if(adjust_min)	scale = min(x_scale, y_scale);
+		else			scale = max(x_scale, y_scale);
+
 		ofScale((float)scale,(float)scale,1);
 		
 		// 回転
@@ -56,7 +60,9 @@ void testApp::draw()
 		// windowにあわせて拡大縮小
 		float x_scale = (float) ofGetWidth() / (float) VIDEO_WIDTH;
 		float y_scale = (float) ofGetHeight() / (float) VIDEO_HEIGHT;
-		float scale = min(x_scale, y_scale);
+		float scale;
+		if(adjust_min)	scale = min(x_scale, y_scale);
+		else			scale = max(x_scale, y_scale);
 		ofScale((float)scale,(float)scale,1);
 		
 		src_image.draw(0, 0);
@@ -83,6 +89,10 @@ void testApp::keyPressed(int key)
 			fullscreen = !fullscreen;
 			ofSetFullscreen(fullscreen);
 			cout << "fullscreen:" << fullscreen << "¥n";
+			break;
+		case 'm':
+			adjust_min = !adjust_min;
+			cout << "adjust_min:" << adjust_min << "¥n";
 			break;
 		default:
 			break;

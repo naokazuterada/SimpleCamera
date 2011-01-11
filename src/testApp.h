@@ -30,6 +30,7 @@ class testApp : public ofBaseApp{
 	bool mirror_horizontal;
 	bool display_rotate;
 	bool fullscreen;
+	bool adjust_min;	// trueの時は全体が画面内に収まる
 };
 
 #endif
