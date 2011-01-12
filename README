@@ -1,1 +1,2 @@
-This is an openFrameworks project witch has simple camera view. Fullscreen with correct aspect ratio, mirror vertical and horizontal.key controls :::::::::::::::::::::::::f : toggle fullscreenr : toggle view rotatev : toggle mirror verticalh : toggle mirror horizontal
+This is an openFrameworks project witch has simple camera view. Fullscreen with correct aspect ratio, mirror vertical and horizontal.key controls :::::::::::::::::::::::::f : toggle fullscreen moder : toggle view rotate modev : toggle mirror vertical modeh : toggle mirror horizontal mode
+m : toggle adjust mode , min or max of width and height

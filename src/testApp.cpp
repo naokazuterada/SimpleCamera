@@ -9,11 +9,11 @@ void testApp::setup()
 	
 	ofBackground(0,0,0);
 	
-	mirror_vertical		= false;
+	mirror_vertical		= true;
 	mirror_horizontal	= false;
-	display_rotate		= false;
+	display_rotate		= true;
 	fullscreen			= false;
-	adjust_min			= false;
+	adjust_min			= true;
 	
 	vidGrabber.setVerbose(true);
 	vidGrabber.initGrabber(VIDEO_WIDTH, VIDEO_HEIGHT);
